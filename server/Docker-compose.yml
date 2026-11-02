@@ -1,4 +1,4 @@
-name: neath_morokot
+name: nhey_menglong
 services: 
 
   admin:
@@ -8,13 +8,13 @@ services:
       - "8116:80"
       
   server:
-    build: ./server
-    container_name: nhey_menglong-server
+    build: ../server
+    container_name: nhey_menglong
     ports:
       - "8117:8101"
 
   client:
-    build: ./client
-    container_name: nhey_menglong-client
+    build: ../client
+    container_name: nhey_menglong
     ports:
       - "8118:80"
