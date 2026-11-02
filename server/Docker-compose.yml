@@ -2,7 +2,7 @@ name: neath_morokot
 services: 
 
   admin:
-    build: ./admin
+    build: ../admin
     container_name: nhey_menglong
     ports:
       - "8116:80"
