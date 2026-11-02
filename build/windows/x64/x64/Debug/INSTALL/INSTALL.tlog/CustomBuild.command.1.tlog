@@ -1,0 +1,10 @@
+^C:\USERS\USER\ONEDRIVE\DESKTOP\GIT_SERVER\BUILD\WINDOWS\X64\CMAKEFILES\EA3764CEDBA0A3BE42EC015849400C6F\INSTALL_FORCE.RULE
+setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
